@@ -13,12 +13,12 @@
 
 A **STIR & XCCY trading desk** needs to monitor:
 
-✅ **OIS curves** in EUR ESTR, USD SOFR, GBP SONIA (3M–30Y)  
-✅ **XCCY basis curves** for EUR/USD, EUR/GBP, USD/JPY  
-✅ **Active XCCY positions** (direction, notional, basis levels, MTM P&L)  
-✅ **Curve trades** (2s5s, 5s10s, 2s10s steepeners/flatteners)  
-✅ **P&L attribution** (basis move + carry + roll-down)  
-✅ **Stress scenarios** (rates, basis shock, curve twist)
+**OIS curves** in EUR ESTR, USD SOFR, GBP SONIA (3M–30Y)  
+**XCCY basis curves** for EUR/USD, EUR/GBP, USD/JPY  
+**Active XCCY positions** (direction, notional, basis levels, MTM P&L)  
+**Curve trades** (2s5s, 5s10s, 2s10s steepeners/flatteners)  
+**P&L attribution** (basis move + carry + roll-down)  
+**Stress scenarios** (rates, basis shock, curve twist)
 
 ---
 
@@ -90,32 +90,19 @@ python app.py
 - **Entry vs Mark spread**: basis points of move
 - **P&L**: realized from curve moves
 
----
 
-## Technical Stack
-
-**Backend:** Python + Flask + NumPy + SciPy (cubic spline interpolation)  
-**Frontend:** Vanilla JavaScript + Chart.js 4.4 (interactive charts)  
-**Data:** Simulated OIS rates and basis curves (realistic as of Apr 2026)
 
 ---
 
-## Relevance for JPM / GS Front Desk
-
-This dashboard covers the core competencies for:
-- **Euro STIRT (Short-Term Interest Rate Trading)**: OIS monitoring, curve trades
-- **Cross-Currency Trading**: XCCY basis positions, basis P&L attribution
-- **Market Analytics**: Multi-currency curve comparison, spread analysis
-- **Risk Management**: DV01, basis DV01, stress testing
 
 ---
 
 ## Limitations
 
-⚠️ Fictitious data — no live market feeds  
-⚠️ Simplified P&L model (real systems use full revaluation)  
-⚠️ Parallel shifts only — real stress uses key rate durations  
-⚠️ No options / volatility component  
+Fictitious data — no live market feeds  
+Simplified P&L model (real systems use full revaluation)  
+Parallel shifts only — real stress uses key rate durations  
+No options / volatility component  
 
 ## Extensions
 
